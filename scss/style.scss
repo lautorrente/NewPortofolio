@@ -3,6 +3,9 @@
     margin: 0;
 }
 
+@import "../base/variables";
+@import "../base/extends";
+
 nav {
     div {
         a {
@@ -19,21 +22,19 @@ nav {
     
 
 .main__index div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %display;
+    @extend %justify-align-center;
     margin-top: 17%;
     h1 {
         font-size: 70px;
-        color: #122336;
+        color: $azul-paleta;
     }
     h2 {
         font-size: 35px;
          --c: #fff; /* text color */
         background: 
                 linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-                #122336;
+                $azul-paleta;
                 color: #0000;
                 border: none;
                 transform: rotateY(calc(20deg*var(--_i,-1)));
@@ -99,9 +100,9 @@ nav {
     h4 {
         font-size: 35px;
         margin: 10px;
-        color: #122336;
+        color: $azul-paleta;
         text-align: center;
-        border: 3px solid #122336;
+        border: 3px solid $azul-paleta;
     }
 }
 
@@ -109,3 +110,9 @@ nav {
 @import "../components/footer";
 @import "../components/body-parallax";
 @import "../components/myProjects";
+
+
+
+
+
+

@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+.main__index div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__index div {
+  justify-content: center;
+  align-items: center;
+}
+
 nav div a img {
   height: 40px;
   width: 100px;
@@ -11,10 +21,6 @@ nav div a img {
 }
 
 .main__index div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 17%;
 }
 .main__index div h1 {
