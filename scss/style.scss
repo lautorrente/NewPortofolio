@@ -5,6 +5,7 @@
 
 @import "../base/variables";
 @import "../base/extends";
+@import "../base/mixin";
 
 nav {
     div {
@@ -110,6 +111,8 @@ nav {
 @import "../components/footer";
 @import "../components/body-parallax";
 @import "../components/myProjects";
+@import "../components/testimonios-mP";
+
 
 
 

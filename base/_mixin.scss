@@ -1,0 +1,13 @@
+$bg-color: #112236;
+$fsz: 20px;
+$espaciado: 5%;
+
+
+
+
+@mixin section ($bg-color, $fsz, $espaciado) {
+    background-color: $bg-color;
+    font-size: $fsz;
+    padding: $espaciado;
+
+}
