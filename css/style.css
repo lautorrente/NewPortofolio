@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
 * {
   padding: 0;
   margin: 0;
 }
 
-.main__index div {
+.main__myProjects div, .main__index div {
   display: flex;
   flex-direction: column;
 }
 
-.main__index div {
+.main__myProjects div, .main__index div {
   justify-content: center;
   align-items: center;
 }
@@ -433,37 +435,87 @@ body {
 .main__myProjects div {
   margin-top: 100px;
 }
-.main__myProjects div h2 {
-  text-align: center;
-}
-.main__myProjects div h2:hover {
-  color: #112233;
-}
-.main__myProjects div p {
+.main__myProjects p {
+  margin-top: 200px;
   margin: 10px;
   padding: 15px;
   font-size: 20px;
-  color: #fff;
+  color: #797373;
 }
-.main__myProjects div p:hover {
-  background-color: #112233;
+.main__myProjects p:hover {
+  background-color: #122336;
 }
-.main__myProjects section h3 {
+
+.section1__myProjects h3 {
   display: inline-block;
-  color: #112233;
+  color: #122336;
 }
-.main__myProjects section h3:hover {
+.section1__myProjects h3:hover {
   background-color: aqua;
 }
-.main__myProjects section p {
+.section1__myProjects p {
   font-size: 15px;
-  color: #112233;
+  color: #122336;
 }
-.main__myProjects section p:hover {
+.section1__myProjects p:hover {
   background-color: aqua;
 }
-.main__myProjects section img {
+.section1__myProjects img {
   margin: 25px;
+}
+
+/* Positioning */
+.container {
+  min-height: 100%;
+}
+
+.center {
+  top: 7%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.apple {
+  /* Text Background Effect */
+  background: url("http://doodling.surge.sh/assets/images/bg-1.jpg");
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Other */
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  animation: slice 3s, dynamic 7s infinite alternate linear;
+  white-space: nowrap;
+}
+
+* {
+  user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+  .apple {
+    font-size: 40px;
+  }
+}
+/* Slice Animation */
+@keyframes slice {
+  0% {
+    line-height: 0%;
+  }
+  100% {
+    line-height: 100%;
+  }
+}
+/* Dynamic Background Animation */
+@keyframes dynamic {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
