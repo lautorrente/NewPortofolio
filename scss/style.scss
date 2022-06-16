@@ -6,6 +6,7 @@
 @import "../base/variables";
 @import "../base/extends";
 @import "../base/mixin";
+@import "../base/maps";
 
 nav {
     div {
@@ -69,6 +70,11 @@ nav {
 .footer-contact {
     margin-top: 540px;
 
+}
+.footer-links {
+    color: map-get($links, $color);
+    text-decoration: map-get($links , $decoration);
+    font-size: map-get($links , $fsz);
 }
 .section1__index {
     margin-top: 80px;
