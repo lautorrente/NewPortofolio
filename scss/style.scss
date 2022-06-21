@@ -72,9 +72,9 @@ nav {
 
 }
 .footer-links {
-    color: map-get($links, $color);
-    text-decoration: map-get($links , $decoration);
-    font-size: map-get($links , $fsz);
+    color: map-get($links , color );
+    text-decoration: map-get($links , decoration);
+    font-size: map-get($links , fsz );
 }
 .section1__index {
     margin-top: 80px;

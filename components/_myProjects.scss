@@ -1,21 +1,13 @@
 .main__myProjects {
     
     div {
+        color: #122336;
+        font-size: 40px;
         margin-top: 100px;
         @extend %display;
         @extend %justify-align-center;
         }
-        p {
-            margin-top: 200px;
-            margin: 10px;
-            padding: 15px;
-            font-size: 20px;
-            color: #797373;
-            &:hover {
-                background-color: $azul-paleta;
-            }
-        }
-    }
+}
     .section1__myProjects {
         h3 {
             display: inline-block;
@@ -36,71 +28,3 @@
         }
     }
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-/* Positioning */
-
-.container {
-	min-height: 100%;
-}
-
-.center {
-	top: 7%;
-	position: absolute;
-    left: 50%;
-    right: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.apple {
-	
-	/* Text Background Effect */
-	
-	background: url('http://doodling.surge.sh/assets/images/bg-1.jpg');
-	-webkit-background-clip: text;
-	color: transparent;
-
-	/* Other */
-	
-	font-family: 'Roboto', sans-serif;
-	font-size: 60px;
-	font-weight: 600;
-	animation: slice 3s, dynamic 7s infinite alternate linear;
-	white-space: nowrap;
-	
-}
-
-
-* {
-	user-select: none;
-}
-
-@media screen and (max-width: 480px) {
-	.apple {
-		font-size: 40px;
-	}
-}
-
-/* Slice Animation */
-
-@keyframes slice {
-	
-	0% {	line-height: 0%; }
-	
-	100% {	line-height: 100%; }
-	
-}
-
-/* Dynamic Background Animation */
-
-@keyframes dynamic {
-	
-	0% {	background-position: 0% }
-	
-	100% {	background-position: 100%; }
-	
-}

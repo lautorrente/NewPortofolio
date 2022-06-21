@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css?family=Roboto:700");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 * {
   padding: 0;
@@ -63,6 +61,11 @@ nav div a img {
 
 .footer-contact {
   margin-top: 540px;
+}
+
+.footer-links {
+  text-decoration: none;
+  font-size: 10px;
 }
 
 .section1__index {
@@ -465,59 +468,6 @@ body {
   margin: 25px;
 }
 
-/* Positioning */
-.container {
-  min-height: 100%;
-}
-
-.center {
-  top: 7%;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.apple {
-  /* Text Background Effect */
-  background: url("http://doodling.surge.sh/assets/images/bg-1.jpg");
-  -webkit-background-clip: text;
-  color: transparent;
-  /* Other */
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  font-weight: 600;
-  animation: slice 3s, dynamic 7s infinite alternate linear;
-  white-space: nowrap;
-}
-
-* {
-  user-select: none;
-}
-
-@media screen and (max-width: 480px) {
-  .apple {
-    font-size: 40px;
-  }
-}
-/* Slice Animation */
-@keyframes slice {
-  0% {
-    line-height: 0%;
-  }
-  100% {
-    line-height: 100%;
-  }
-}
-/* Dynamic Background Animation */
-@keyframes dynamic {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
 /* Font */
 /* Design */
 *,
