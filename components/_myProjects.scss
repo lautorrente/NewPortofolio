@@ -12,19 +12,14 @@
         h3 {
             display: inline-block;
             color: $azul-paleta;
-            &:hover {
-                background-color: aqua;
-            }
-        }
+            
         p {
             font-size: 15px;
             color: $azul-paleta;
-            &:hover {
-                background-color: aqua;
-            }
         }
         img {
             margin: 25px;
         }
     }
 
+}

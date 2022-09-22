@@ -6,7 +6,6 @@
 @import "../base/variables";
 @import "../base/extends";
 @import "../base/mixin";
-@import "../base/maps";
 
 nav {
     div {
@@ -67,15 +66,8 @@ nav {
                   padding: .1em .3em;
                 }
 }
-.footer-contact {
-    margin-top: 540px;
 
-}
-.footer-links {
-    color: map-get($links , color );
-    text-decoration: map-get($links , decoration);
-    font-size: map-get($links , fsz );
-}
+
 .section1__index {
     margin-top: 80px;
     background-color: #100d25;
@@ -87,7 +79,7 @@ nav {
         align-items: center;
         p {
             padding: 20px;
-            font-size: 20px;
+            font-size: 35px;
         }
         h3 {
             margin: 7px;
@@ -118,8 +110,12 @@ nav {
 @import "../components/body-parallax";
 @import "../components/myProjects";
 @import "../components/testimonios-mP";
+@import "../components/price-table";
 
+.footer-contact {
+    margin-top: 540px !important;
 
+}
 
 
 
